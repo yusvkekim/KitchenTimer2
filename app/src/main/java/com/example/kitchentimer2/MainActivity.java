@@ -2,6 +2,7 @@ package com.example.kitchentimer2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.media.SoundPool;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -13,6 +14,8 @@ public class MainActivity extends AppCompatActivity {
     TextView mTimerText;
     ImageView mStartButton;
     ImageView mStopButton;
+    SoundPool mSoundPool;
+    int mSoundResId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +60,8 @@ public class MainActivity extends AppCompatActivity {
                 timer.cancel();
             }
         });
+
+        //画面が表示される時に呼ばれるメソッド
 
     }
 }
