@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        vectorDrawable.useSupporLibrary = true
+        vectorDrawables.useSupportLibrary = true
         applicationId "com.example.kitchentimer2"
         minSdkVersion 24
         targetSdkVersion 30
